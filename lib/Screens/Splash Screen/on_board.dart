@@ -23,19 +23,19 @@ class _OnBoardState extends State<OnBoard> {
 
   List<Map<String, dynamic>> sliderList = [
     {
-      "icon": 'images/onboard1.png',
+      "icon": 'images/BidOne.png',
       "title": 'Get more bids',
       "description":
           'The platform will update bidders’ devices as soon as they have been outbid, generating increased bidding competition.',
     },
     {
-      "icon": 'images/onboard2.png',
+      "icon": 'images/BidTwo.png',
       "title": 'Raise more money',
       "description":
           'Auctions using online bidding technology typically generate more engagement, resulting in more revenue.',
     },
     {
-      "icon": 'images/onboard3.png',
+      "icon": 'images/BidThree.png',
       "title": 'Save time and reduce hassles',
       "description":
           'Integrated with Greater Giving Event Software to help run a smoother event. You’ll save valuable time with online pre-registration and be able to quickly print or email a receipts with all donations at check-out.',
