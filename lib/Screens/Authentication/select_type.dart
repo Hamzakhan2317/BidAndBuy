@@ -32,7 +32,7 @@ class _SelectTypeState extends State<SelectType> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Image(image: AssetImage("images/logo.png")),
+                // const Image(image: AssetImage("images/logo.png")),
                 const SizedBox(
                   height: 100.0,
                 ),
@@ -62,7 +62,7 @@ class _SelectTypeState extends State<SelectType> {
                         style: kTextStyle.copyWith(fontSize: 14.0),
                       ),
                       subtitle: Text(
-                        'Register your company & start attendance ',
+                        'Approve and manage your bids ',
                         style: kTextStyle.copyWith(
                             color: kGreyTextColor, fontSize: 12.0),
                       ),
@@ -85,11 +85,11 @@ class _SelectTypeState extends State<SelectType> {
                         image: AssetImage('images/employee.png'),
                       ),
                       title: Text(
-                        'Employee',
+                        'User',
                         style: kTextStyle.copyWith(fontSize: 14.0),
                       ),
                       subtitle: Text(
-                        'Register and start marking your attendance',
+                        'Register and start sellling your goods',
                         style: kTextStyle.copyWith(
                             color: kGreyTextColor, fontSize: 12.0),
                       ),
