@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const kMainColor = Color(0xFF567DF4);
+const kMainColor = Color(0xFFEA712F);
 const kGreyTextColor = Color(0xFF9090AD);
 const kBorderColorTextField = Color(0xFFC2C2C2);
 const kDarkWhite = Color(0xFFF1F7F7);
 const kTitleColor = Color(0xFF22215B);
-const kAlertColor =  Color(0xFFFF8919);
-const kBgColor =  Color(0xFFFAFAFA);
+const kAlertColor = Color(0xFFFF8919);
+const kBgColor = Color(0xFFFAFAFA);
 const kHalfDay = Color(0xFFE8B500);
 const kGreenColor = Color(0xFF08BC85);
-
 
 final kTextStyle = GoogleFonts.manrope(
   color: kTitleColor,
@@ -42,6 +41,7 @@ OutlineInputBorder outlineInputBorder() {
     borderSide: BorderSide(color: kMainColor.withOpacity(0.1)),
   );
 }
+
 final otpInputDecoration = InputDecoration(
   contentPadding: const EdgeInsets.symmetric(vertical: 5.0),
   border: outlineInputBorder(),
@@ -61,12 +61,7 @@ List<String> employees = [
   '81 - 90',
   '91 - 100',
 ];
-List<String> designations = [
-  'Designer',
-  'Manager',
-  'Developer',
-  'Officer'
-];
+List<String> designations = ['Designer', 'Manager', 'Developer', 'Officer'];
 
 List<String> employeeType = [
   'Full Time',
@@ -75,7 +70,6 @@ List<String> employeeType = [
   'Remote',
 ];
 
-
 List<String> employeeName = [
   'Sahidul Islam',
   'Ibne Riead',
@@ -83,10 +77,7 @@ List<String> employeeName = [
   'Emily Jones'
 ];
 
-List<String> genderList = [
-  'Male',
-  'Female'
-];
+List<String> genderList = ['Male', 'Female'];
 
 List<String> expensePurpose = [
   'Marketing',
@@ -105,4 +96,3 @@ List<String> saleStats = [
   'Monthly',
   'Yearly',
 ];
-

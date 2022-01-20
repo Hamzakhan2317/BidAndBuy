@@ -49,12 +49,15 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Center(
               child: Container(
-                height: 100,
-                width: 100,
+                height: 140,
+                width: 120,
                 child: const CircleAvatar(
                   backgroundColor: Colors.white,
-                  child: Image(
-                    image: AssetImage('images/logo.png'),
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Image(
+                      image: AssetImage('images/logo.png'),
+                    ),
                   ),
                 ),
               ),
