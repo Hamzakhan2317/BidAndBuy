@@ -1,57 +1,20 @@
 import 'package:bid_to_buy/Screens/design_course/category_list_view.dart';
 import 'package:bid_to_buy/Screens/design_course/course_info_screen.dart';
-import 'package:bid_to_buy/Screens/design_course/design_course_app_theme.dart';
 import 'package:bid_to_buy/Screens/design_course/popular_course_list_view.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:bid_to_buy/Screens/Authentication/profile_screen.dart';
-import 'package:bid_to_buy/Screens/Client%20Management/empty_client_list.dart';
-import 'package:bid_to_buy/Screens/Employee%20management/management_screen.dart';
-import 'package:bid_to_buy/Screens/Expense%20Management/management_screen.dart';
-import 'package:bid_to_buy/Screens/File%20Management/empty_file_management.dart';
-import 'package:bid_to_buy/Screens/Holiday%20Management/empty_holiday.dart';
-import 'package:bid_to_buy/Screens/Home/pricing_screen.dart';
-import 'package:bid_to_buy/Screens/Home/privacy_policy.dart';
-import 'package:bid_to_buy/Screens/Home/terms_of_service.dart';
-import 'package:bid_to_buy/Screens/NOC%20Certificate/empty_certificate.dart';
-import 'package:bid_to_buy/Screens/Notice%20Board/empty_notice_board.dart';
-import 'package:bid_to_buy/Screens/Payroll%20Management/management_screen.dart';
-import 'package:bid_to_buy/Screens/Settings/settings_screen.dart';
-import 'package:nb_utils/nb_utils.dart';
-import 'package:share_plus/share_plus.dart';
-import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'design_course_app_theme.dart';
 
-import '../../constant.dart';
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
+class DesignCourseHomeScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _DesignCourseHomeScreenState createState() => _DesignCourseHomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-    CategoryType categoryType = CategoryType.ui;
-  bool isChecked = false;
-  int _currentIndex = 0;
-  late PageController _pageController;
-
-  @override
-  void initState() {
-    super.initState();
-    _pageController = PageController();
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
+class _DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
+  CategoryType categoryType = CategoryType.ui;
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       color: DesignCourseAppTheme.nearlyWhite,
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -82,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
   Widget getCategoryUI() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -141,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           const Text(
-            'Popular Categories',
+            'Popular Course',
             textAlign: TextAlign.left,
             style: TextStyle(
               fontWeight: FontWeight.w600,
@@ -174,11 +138,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget getButtonUI(CategoryType categoryTypeData, bool isSelected) {
     String txt = '';
     if (CategoryType.ui == categoryTypeData) {
-      txt = 'Electronics';
+      txt = 'Ui/Ux';
     } else if (CategoryType.coding == categoryTypeData) {
-      txt = 'Vehicles';
+      txt = 'Coding';
     } else if (CategoryType.basic == categoryTypeData) {
-      txt = 'Utensils';
+      txt = 'Basic UI';
     }
     return Expanded(
       child: Container(
@@ -233,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width * 0.75,
             height: 64,
             child: Padding(
-              padding:   EdgeInsets.only(top: 8, bottom: 8),
+              padding: const EdgeInsets.only(top: 8, bottom: 8),
               child: Container(
                 decoration: const BoxDecoration(
                   color:Color(0xffF8FAFB),
@@ -263,7 +227,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             helperStyle: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                              color:Color(0xffB9BABC),
+                              color:Color(0xffB9BABC) ,
                             ),
                             labelStyle: TextStyle(
                               fontWeight: FontWeight.w600,
@@ -337,6 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
 enum CategoryType {
   ui,
   coding,
