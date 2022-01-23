@@ -5,14 +5,20 @@ const kMainColor = Color(0xFFEA712F);
 const kGreyTextColor = Color(0xFF9090AD);
 const kBorderColorTextField = Color(0xFFC2C2C2);
 const kDarkWhite = Color(0xFFF1F7F7);
-const kTitleColor = Color(0xFF22215B);
+const kTitleColor = Color(0xFF0A3F54);
 const kAlertColor = Color(0xFFFF8919);
 const kBgColor = Color(0xFFFAFAFA);
 const kHalfDay = Color(0xFFE8B500);
-const kGreenColor = Color(0xFF08BC85);
+const kGreenColor = Color(0xFF055C85);
+const mainOrange = Color(0xFFEA712F  );
+const dimOrange = Color(0xFFEC864B );
+const lightOrange = Color(0xFFFBD3BA);
+const mainBlue = Color(0xFF031884 );
+const dimDarkBlue = Color(0xFF1452B7 );
+const LightDarkBlue = Color(0xFF4B99FB );
 
 final kTextStyle = GoogleFonts.manrope(
-  color: kTitleColor,
+  color: kTitleColor
 );
 
 const kButtonDecoration = BoxDecoration(
@@ -22,7 +28,7 @@ const kButtonDecoration = BoxDecoration(
 );
 
 const kInputDecoration = InputDecoration(
-  hintStyle: TextStyle(color: kBorderColorTextField),
+  hintStyle: TextStyle(color: kBorderColorTextField,fontFamily: "Fira"),
   filled: true,
   fillColor: Colors.white70,
   enabledBorder: OutlineInputBorder(

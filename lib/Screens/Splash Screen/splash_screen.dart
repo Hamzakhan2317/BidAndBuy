@@ -40,42 +40,49 @@ class _SplashScreenState extends State<SplashScreen> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: kMainColor,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 3,
-            ),
-            Center(
-              child: Container(
-                height: 140,
-                width: 120,
-                child: const CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Padding(
-                    padding: EdgeInsets.all(12.0),
-                    child: Image(
-                      image: AssetImage('images/logo.png'),
+        body: Container(
+          decoration: BoxDecoration(
+              gradient: new LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [lightOrange, dimOrange, mainOrange],
+          )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height / 3,
+              ),
+              Center(
+                child: Container(
+                  child: const CircleAvatar(
+                    radius: 60,
+                    backgroundColor: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Image(
+                        image: AssetImage('images/logo.png'),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-            const Spacer(),
-            Center(
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 10.0),
-                child: Text(
-                  'Version 1.0.0',
-                  style: GoogleFonts.manrope(
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 15.0),
+              const Spacer(),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 10.0),
+                  child: Text(
+                    'Version 1.0.0',
+                    style: GoogleFonts.manrope(
+                        color: Colors.white,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 15.0),
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -27,7 +27,7 @@ class ButtonGlobal extends StatelessWidget {
         child: Center(
           child: Text(
             buttontext,
-            style: kTextStyle.copyWith(fontSize: 20.0, color: Colors.white,fontWeight: FontWeight.bold),
+            style: kTextStyle.copyWith(fontSize: 20.0, color: Colors.white, fontFamily: "Fira" ),
           ),
         ),
       ),

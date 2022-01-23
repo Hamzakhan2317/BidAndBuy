@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
         title: Text(
           'Sign In',
           style: kTextStyle.copyWith(
-              color: Colors.white, fontWeight: FontWeight.bold),
+              color: Colors.white,fontFamily: "Fira"),
         ),
       ),
       body: Column(
@@ -73,7 +73,7 @@ class _SignInState extends State<SignIn> {
                         prefixIcon: CountryCodePicker(
                           padding: EdgeInsets.zero,
                           onChanged: print,
-                          initialSelection: 'BD',
+                          initialSelection: 'PK',
                           showFlag: true,
                           showDropDownButton: true,
                           alignLeft: false,
