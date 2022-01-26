@@ -1,3 +1,4 @@
+import 'package:bid_to_buy/Screens/introduction_animation/introduction_animation_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:bid_to_buy/Screens/Splash%20Screen/splash_screen.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       
       title: 'Bid & Buy',
-      home: const SplashScreen(),
+      home:const   IntroductionAnimationScreen(),
     );
   }
 }

@@ -258,7 +258,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           keyboardType: TextInputType.text,
                           decoration: const InputDecoration(
-                            labelText: 'Search for course',
+                            labelText: 'Search for categories',
                             border: InputBorder.none,
                             helperStyle: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -315,7 +315,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Text(
-                  'Design Course',
+                  'Category',
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
