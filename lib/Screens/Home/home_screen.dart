@@ -174,11 +174,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget getButtonUI(CategoryType categoryTypeData, bool isSelected) {
     String txt = '';
     if (CategoryType.ui == categoryTypeData) {
-      txt = 'Electronics';
+      txt = 'Bikes';
     } else if (CategoryType.coding == categoryTypeData) {
-      txt = 'Vehicles';
+      txt = 'Cars';
     } else if (CategoryType.basic == categoryTypeData) {
-      txt = 'Utensils';
+      txt = 'Mobiles';
     }
     return Expanded(
       child: Container(
