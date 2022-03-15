@@ -39,14 +39,14 @@ class _SplashViewState extends State<SplashView> {
             const Padding(
               padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Text(
-                "Clearhead",
+                "Timed Auctions",
                 style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
               ),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 64, right: 64),
               child: Text(
-                "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                "Sell in a variety of ways, with real-time bidding and purchases.",
                 textAlign: TextAlign.center,
               ),
             ),

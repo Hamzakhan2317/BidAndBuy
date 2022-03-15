@@ -96,18 +96,18 @@ class CareView extends StatelessWidget {
                 position: _relaxFirstHalfAnimation,
                 child: SlideTransition(
                   position: _relaxSecondHalfAnimation,
-                  child: Text(
-                    "Care",
+                  child: const Text(
+                    "Scales to Fit You",
                     style:
                         TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding:
                     EdgeInsets.only(left: 64, right: 64, bottom: 16, top: 16),
                 child: Text(
-                  "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                  "Supporting from private sales, to auctions with thousands of bidders.",
                   textAlign: TextAlign.center,
                 ),
               ),
