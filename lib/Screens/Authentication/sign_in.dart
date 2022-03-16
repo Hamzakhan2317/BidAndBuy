@@ -30,8 +30,7 @@ class _SignInState extends State<SignIn> {
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
           'Sign In',
-          style: kTextStyle.copyWith(
-              color: Colors.white,fontFamily: "Fira"),
+          style: kTextStyle.copyWith(color: Colors.white, fontFamily: "Fira"),
         ),
       ),
       body: Column(
@@ -40,7 +39,7 @@ class _SignInState extends State<SignIn> {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Text(
-              'Sign In now to begin an amazing journey',
+              'Sign In now to begin an  amazing journey',
               style: kTextStyle.copyWith(color: Colors.white),
             ),
           ),
