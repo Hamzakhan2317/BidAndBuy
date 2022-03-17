@@ -41,33 +41,13 @@ class _SignInState extends State<SignIn> {
               padding: EdgeInsets.all(20.0),
               child: Center(
                 child: Text(
-                  ' B I D   I T   T O   W I N   I T',
+                  'SIGN IN',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 35.0,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
               )),
-          Row(
-            verticalDirection: VerticalDirection.down,
-            children: [
-              Container(
-                height: 100.0,
-                width: 230.0,
-                child: const Center(
-                  child: Text(
-                    '   SIGN IN',
-                    style: TextStyle(
-                        fontSize: 30.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                margin: EdgeInsets.fromLTRB(7.0, 15.0, 7.0, 7.0),
-                padding: EdgeInsets.all(25.0),
-              ),
-            ],
-          ),
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(20.0),
@@ -147,7 +127,7 @@ class _SignInState extends State<SignIn> {
                     },
                   ),
                   const SizedBox(
-                    height: 20.0,
+                    height: 30.0,
                   ),
                   RichText(
                     text: TextSpan(
