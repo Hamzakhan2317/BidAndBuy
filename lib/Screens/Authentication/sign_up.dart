@@ -47,7 +47,7 @@ class _SignUpState extends State<SignUp> {
         elevation: 0.0,
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
-          'Sign In',
+          'BID CALLERS',
           style: kTextStyle.copyWith(
               color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -56,12 +56,36 @@ class _SignUpState extends State<SignUp> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Text(
-                'Sign Up now to begin an amazing journey',
-                style: kTextStyle.copyWith(color: Colors.white),
-              ),
+            const Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Center(
+                  child: Text(
+                    ' B I D   I T   T O   W I N   I T',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                )),
+            Row(
+              verticalDirection: VerticalDirection.down,
+              children: [
+                Container(
+                  height: 100.0,
+                  width: 230.0,
+                  child: const Center(
+                    child: Text(
+                      '   SIGN UP ',
+                      style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  margin: EdgeInsets.fromLTRB(7.0, 15.0, 7.0, 7.0),
+                  padding: EdgeInsets.all(25.0),
+                ),
+              ],
             ),
             Container(
               padding: const EdgeInsets.all(20.0),
@@ -79,8 +103,8 @@ class _SignUpState extends State<SignUp> {
                   AppTextField(
                     textFieldType: TextFieldType.NAME,
                     decoration: const InputDecoration(
-                      labelText: 'Company Name',
-                      hintText: 'MaanTheme',
+                      labelText: 'User Name',
+                      hintText: 'Maan',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -124,7 +148,7 @@ class _SignUpState extends State<SignUp> {
                         prefixIcon: CountryCodePicker(
                           padding: EdgeInsets.zero,
                           onChanged: print,
-                          initialSelection: 'BD',
+                          initialSelection: 'PK',
                           showFlag: true,
                           showDropDownButton: true,
                           alignLeft: false,
@@ -147,24 +171,24 @@ class _SignUpState extends State<SignUp> {
                   const SizedBox(
                     height: 20.0,
                   ),
-                  SizedBox(
-                    height: 60.0,
-                    child: FormField(
-                      builder: (FormFieldState<dynamic> field) {
-                        return InputDecorator(
-                          decoration: InputDecoration(
-                              floatingLabelBehavior:
-                                  FloatingLabelBehavior.always,
-                              labelText: 'Select Gender',
-                              labelStyle: kTextStyle,
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(5.0))),
-                          child:
-                              DropdownButtonHideUnderline(child: getEmployee()),
-                        );
-                      },
-                    ),
-                  ),
+                  // SizedBox(
+                  //   height: 60.0,
+                  //   child: FormField(
+                  //     builder: (FormFieldState<dynamic> field) {
+                  //       return InputDecorator(
+                  //         decoration: InputDecoration(
+                  //             floatingLabelBehavior:
+                  //                 FloatingLabelBehavior.always,
+                  //             labelText: 'Select Gender',
+                  //             labelStyle: kTextStyle,
+                  //             border: OutlineInputBorder(
+                  //                 borderRadius: BorderRadius.circular(5.0))),
+                  //         child:
+                  //             DropdownButtonHideUnderline(child: getEmployee()),
+                  //       );
+                  //     },
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 20.0,
                   ),

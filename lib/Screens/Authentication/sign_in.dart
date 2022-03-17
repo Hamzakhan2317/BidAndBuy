@@ -25,23 +25,48 @@ class _SignInState extends State<SignIn> {
       resizeToAvoidBottomInset: false,
       backgroundColor: kMainColor,
       appBar: AppBar(
-        backgroundColor: kMainColor,
-        elevation: 0.0,
+        backgroundColor: Colors.black12,
+        // elevation: 0.0,
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
-          'Sign In',
-          style: kTextStyle.copyWith(color: Colors.white, fontFamily: "Fira"),
+          'Bid Callers',
+          style: kTextStyle.copyWith(
+              color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Text(
-              'Sign In now to begin an  amazing journey',
-              style: kTextStyle.copyWith(color: Colors.white),
-            ),
+          const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Center(
+                child: Text(
+                  ' B I D   I T   T O   W I N   I T',
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+              )),
+          Row(
+            verticalDirection: VerticalDirection.down,
+            children: [
+              Container(
+                height: 100.0,
+                width: 230.0,
+                child: const Center(
+                  child: Text(
+                    '   SIGN IN',
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                margin: EdgeInsets.fromLTRB(7.0, 15.0, 7.0, 7.0),
+                padding: EdgeInsets.all(25.0),
+              ),
+            ],
           ),
           Expanded(
             child: Container(
@@ -60,23 +85,11 @@ class _SignInState extends State<SignIn> {
                   SizedBox(
                     height: 60.0,
                     child: AppTextField(
-                      textFieldType: TextFieldType.PHONE,
-                      controller: TextEditingController(),
-                      enabled: true,
-                      decoration: InputDecoration(
-                        labelText: 'Phone Number',
-                        hintText: '1767 432556',
-                        labelStyle: kTextStyle,
-                        floatingLabelBehavior: FloatingLabelBehavior.never,
-                        border: const OutlineInputBorder(),
-                        prefixIcon: CountryCodePicker(
-                          padding: EdgeInsets.zero,
-                          onChanged: print,
-                          initialSelection: 'PK',
-                          showFlag: true,
-                          showDropDownButton: true,
-                          alignLeft: false,
-                        ),
+                      textFieldType: TextFieldType.EMAIL,
+                      decoration: const InputDecoration(
+                        labelText: 'Email Address',
+                        hintText: 'maantheme@maantheme.com',
+                        border: OutlineInputBorder(),
                       ),
                     ),
                   ),
@@ -126,7 +139,7 @@ class _SignInState extends State<SignIn> {
                     height: 20.0,
                   ),
                   ButtonGlobal(
-                    buttontext: 'Sign In',
+                    buttontext: 'Log In',
                     buttonDecoration:
                         kButtonDecoration.copyWith(color: kMainColor),
                     onPressed: () {
