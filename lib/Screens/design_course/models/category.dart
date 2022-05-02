@@ -2,43 +2,43 @@ class Category {
   Category({
     this.title = '',
     this.imagePath = '',
-    this.lessonCount = 0,
+    this.productCount = 0,
     this.money = 0,
     this.rating = 0.0,
   });
 
   String title;
-  int lessonCount;
+  int productCount;
   int money;
   double rating;
   String imagePath;
 
   static List<Category> categoryList = <Category>[
     Category(
-      imagePath: 'images/interFace1.png',
+      imagePath: 'car1.png',
       title: 'User interface Design',
-      lessonCount: 24,
+      productCount: 24,
       money: 25,
       rating: 4.3,
     ),
     Category(
-      imagePath: 'images/interFace2.png',
+      imagePath: 'images/car2.png',
       title: 'User interface Design',
-      lessonCount: 22,
+      productCount: 22,
       money: 18,
       rating: 4.6,
     ),
     Category(
-      imagePath: 'images/interFace1.png',
+      imagePath: 'images/car1.png',
       title: 'User interface Design',
-      lessonCount: 24,
+      productCount: 24,
       money: 25,
       rating: 4.3,
     ),
     Category(
-      imagePath: 'images/interFace2.png',
+      imagePath: 'images/car2.png',
       title: 'User interface Design',
-      lessonCount: 22,
+      productCount: 22,
       money: 18,
       rating: 4.6,
     ),
@@ -46,30 +46,30 @@ class Category {
 
   static List<Category> popularCourseList = <Category>[
     Category(
-      imagePath: 'images/interFace3.png',
+      imagePath: 'images/bike1.png',
       title: 'App Design Course',
-      lessonCount: 12,
+      productCount: 12,
       money: 25,
       rating: 4.8,
     ),
     Category(
-      imagePath: 'images/interFace4.png',
+      imagePath: 'images/bike2.png',
       title: 'Web Design Course',
-      lessonCount: 28,
+      productCount: 28,
       money: 208,
       rating: 4.9,
     ),
     Category(
-      imagePath: 'images/interFace3.png',
+      imagePath: 'images/car1.png',
       title: 'App Design Course',
-      lessonCount: 12,
+      productCount: 12,
       money: 25,
       rating: 4.8,
     ),
     Category(
-      imagePath: 'images/interFace4.png',
+      imagePath: 'images/car2.png',
       title: 'Web Design Course',
-      lessonCount: 28,
+      productCount: 28,
       money: 208,
       rating: 4.9,
     ),

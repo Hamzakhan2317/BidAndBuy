@@ -112,9 +112,9 @@ class CategoryView extends StatelessWidget {
                           Expanded(
                             child: Container(
                               decoration: const BoxDecoration(
-                                color:Color(0xffF8FAFB),
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(16.0)),
+                                color: Color(0xffF8FAFB),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(16.0)),
                                 // border: new Border.all(
                                 //     color: DesignCourseAppTheme.notWhite),
                               ),
@@ -153,7 +153,7 @@ class CategoryView extends StatelessWidget {
                                                   CrossAxisAlignment.center,
                                               children: <Widget>[
                                                 Text(
-                                                  '${category!.lessonCount} lesson',
+                                                  '${category!.productCount} products',
                                                   textAlign: TextAlign.left,
                                                   style: const TextStyle(
                                                     fontWeight: FontWeight.w200,

@@ -118,9 +118,9 @@ class CategoryView extends StatelessWidget {
                           Expanded(
                             child: Container(
                               decoration: const BoxDecoration(
-                                color:Color(0xffF8FAFB),
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(16.0)),
+                                color: Color(0xffF8FAFB),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(16.0)),
                               ),
                               child: Row(
                                 children: <Widget>[
@@ -160,7 +160,7 @@ class CategoryView extends StatelessWidget {
                                                   CrossAxisAlignment.center,
                                               children: <Widget>[
                                                 Text(
-                                                  '${category!.lessonCount} lesson',
+                                                  '${category!.productCount} products',
                                                   textAlign: TextAlign.left,
                                                   style: const TextStyle(
                                                     fontWeight: FontWeight.w200,
@@ -222,7 +222,8 @@ class CategoryView extends StatelessWidget {
                                                   ),
                                                 ),
                                                 Container(
-                                                  decoration: const BoxDecoration(
+                                                  decoration:
+                                                      const BoxDecoration(
                                                     color: DesignCourseAppTheme
                                                         .nearlyBlue,
                                                     borderRadius:
@@ -232,8 +233,7 @@ class CategoryView extends StatelessWidget {
                                                   ),
                                                   child: const Padding(
                                                     padding:
-                                                        EdgeInsets.all(
-                                                            4.0),
+                                                        EdgeInsets.all(4.0),
                                                     child: Icon(
                                                       Icons.add,
                                                       color:

@@ -32,7 +32,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-    CategoryType categoryType = CategoryType.ui;
+  CategoryType categoryType = CategoryType.ui;
   bool isChecked = false;
   int _currentIndex = 0;
   late PageController _pageController;
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       color: DesignCourseAppTheme.nearlyWhite,
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -82,6 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
   Widget getCategoryUI() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -233,10 +234,10 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width * 0.75,
             height: 64,
             child: Padding(
-              padding:   EdgeInsets.only(top: 8, bottom: 8),
+              padding: EdgeInsets.only(top: 8, bottom: 8),
               child: Container(
                 decoration: const BoxDecoration(
-                  color:Color(0xffF8FAFB),
+                  color: Color(0xffF8FAFB),
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(13.0),
                     bottomLeft: Radius.circular(13.0),
@@ -263,13 +264,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             helperStyle: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                              color:Color(0xffB9BABC),
+                              color: Color(0xffB9BABC),
                             ),
                             labelStyle: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
                               letterSpacing: 0.2,
-                              color:Color(0xffB9BABC) ,
+                              color: Color(0xffB9BABC),
                             ),
                           ),
                           onEditingComplete: () {},
@@ -279,7 +280,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(
                       width: 60,
                       height: 60,
-                      child: Icon(Icons.search, color:Color(0xffB9BABC)),
+                      child: Icon(Icons.search, color: Color(0xffB9BABC)),
                     )
                   ],
                 ),
@@ -305,7 +306,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const <Widget>[
                 Text(
-                  'Choose your',
+                  'BID  IT  TO  WIN  IT',
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -315,7 +316,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Text(
-                  'Category',
+                  'BID CALLERS',
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -337,6 +338,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
 enum CategoryType {
   ui,
   coding,
